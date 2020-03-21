@@ -65,7 +65,7 @@ jobs:
       #- run: docker ps -a
     - run: git clone https://github.com/wing328/swagger-samples
     - run: sudo mvn jetty:run -f swagger-samples/java/java-jersey-jaxrs-ci & 
-    - run: sleep 30
+    - run: sleep 130
     - run: cat /etc/hosts
     # Test
     - run: mvn --quiet clean install -Dorg.slf4j.simpleLogger.defaultLogLevel=error
