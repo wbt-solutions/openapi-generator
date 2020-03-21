@@ -74,7 +74,7 @@ before_install:
   #- docker run -d -e SWAGGER_HOST=http://petstore.swagger.io -e SWAGGER_BASE_PATH=/v2 -p 80:8080 swaggerapi/petstore
   #- docker ps -a
   - git clone https://github.com/wing328/swagger-samples
-  - sudo mvn jetty:run -f swagger-samples/java/java-jersey-jaxrs-ci"
+  - sudo mvn jetty:run -f swagger-samples/java/java-jersey-jaxrs-ci &
   # Add bats test framework and cURL for Bash script integration tests
   - sudo add-apt-repository ppa:duggan/bats --yes
   - sudo apt-get update -qq

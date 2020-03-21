@@ -60,9 +60,11 @@ jobs:
     - run: node --version
 #    - run: docker pull openapitools/openapi-petstore
 #    - run: docker run -d -e OPENAPI_BASE_PATH=/v3 -e DISABLE_API_KEY=1 -e DISABLE_OAUTH=1 -p 80:8080 openapitools/openapi-petstore
-    - run: docker pull swaggerapi/petstore:1.0.0
-    - run: docker run -d -e SWAGGER_HOST=http://petstore.swagger.io -e SWAGGER_BASE_PATH=/v2 -p 80:8080 swaggerapi/petstore
-    - run: docker ps -a
+#- run: docker pull swaggerapi/petstore:1.0.0
+      #- run: docker run -d -e SWAGGER_HOST=http://petstore.swagger.io -e SWAGGER_BASE_PATH=/v2 -p 80:8080 swaggerapi/petstore
+      #- run: docker ps -a
+    - git clone https://github.com/wing328/swagger-samples
+    - sudo mvn jetty:run -f swagger-samples/java/java-jersey-jaxrs-ci & 
     - run: sleep 30
     - run: cat /etc/hosts
     # Test
