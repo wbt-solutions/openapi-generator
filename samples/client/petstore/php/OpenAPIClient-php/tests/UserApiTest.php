@@ -27,7 +27,7 @@ class UserApiTest extends TestCase
         $this->assertRegExp(
             '/logged in user session/',
             $response,
-            "response string starts with 'logged in user session'"
+            "response string contains 'logged in user session'"
         );
     }
 }
