@@ -64,7 +64,7 @@ jobs:
       #- run: docker run -d -e SWAGGER_HOST=http://petstore.swagger.io -e SWAGGER_BASE_PATH=/v2 -p 80:8080 swaggerapi/petstore
       #- run: docker ps -a
     - run: git clone https://github.com/wing328/swagger-samples
-    - run: sudo mvn jetty:run -f swagger-samples/java/java-jersey-jaxrs-ci & 
+    - run: sudo /usr/local/bin/mvn jetty:run -f swagger-samples/java/java-jersey-jaxrs-ci
     - run: sleep 130
     - run: cat /etc/hosts
     # Test
