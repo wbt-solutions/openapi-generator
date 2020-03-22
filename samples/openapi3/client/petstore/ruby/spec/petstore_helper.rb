@@ -26,7 +26,7 @@ def prepare_store(store_api)
   order = Petstore::Order.new("id" => order_id,
           "pet_id" => 123,
           "quantity" => 789,
-          "ship_date" => "2015-04-06T23:42:01.678Z",
+          #"ship_date" => "2015-04-06T23:42:01.678Z",
           "status" => "placed",
           "complete" => false)
   store_api.place_order(order)

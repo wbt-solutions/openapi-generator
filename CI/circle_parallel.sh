@@ -9,7 +9,7 @@ set -e
 
 git clone https://github.com/wing328/swagger-samples
 sudo /usr/local/apache-maven/bin/mvn jetty:run -f swagger-samples/java/java-jersey-jaxrs-ci &
-sleep 60
+sleep 30
 
 if [ "$NODE_INDEX" = "1" ]; then
   echo "Running node $NODE_INDEX to test 'samples.circleci' defined in pom.xml ..."
