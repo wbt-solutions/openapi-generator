@@ -1228,7 +1228,7 @@
                 <!-- comment out below due to https://github.com/OpenAPITools/openapi-generator/issues/5235
                 <module>samples/server/petstore/python-aiohttp</module> -->
                 <!-- clients -->
-                <module>samples/client/petstore/python</module>
+                <!--<module>samples/client/petstore/python</module>-->
                 <module>samples/client/petstore/python-experimental</module>
                 <module>samples/client/petstore/python-asyncio</module>
                 <module>samples/client/petstore/python-tornado</module>
