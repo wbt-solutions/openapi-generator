@@ -1228,7 +1228,7 @@
                 <!-- comment out below due to https://github.com/OpenAPITools/openapi-generator/issues/5235
                 <module>samples/server/petstore/python-aiohttp</module> -->
                 <!-- clients -->
-                <!--<module>samples/client/petstore/bash</module>-->
+                <module>samples/client/petstore/bash</module>
                 <module>samples/client/petstore/c</module>
                 <module>samples/client/petstore/cpp-qt5</module>
                 <!--<module>samples/client/petstore/elm-0.18</module>-->
@@ -1244,12 +1244,12 @@
                 <module>samples/client/petstore/javascript-promise</module>
                 <module>samples/client/petstore/javascript-promise-es6</module>
                 <module>samples/client/petstore/javascript-flowtyped</module>
-                <module>samples/client/petstore/python</module>
+                <!--<module>samples/client/petstore/python</module>
                 <module>samples/client/petstore/python-experimental</module>
                 <module>samples/client/petstore/python-asyncio</module>
                 <module>samples/client/petstore/python-tornado</module>
                 <module>samples/openapi3/client/petstore/python</module>
-                <module>samples/openapi3/client/petstore/python-experimental</module>
+                <module>samples/openapi3/client/petstore/python-experimental</module>-->
                 <module>samples/client/petstore/typescript-fetch/builds/default</module>
                 <module>samples/client/petstore/typescript-fetch/builds/es6-target</module>
                 <module>samples/client/petstore/typescript-fetch/builds/with-npm-version</module>
