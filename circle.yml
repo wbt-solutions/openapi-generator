@@ -63,10 +63,10 @@ jobs:
 #- run: docker pull swaggerapi/petstore:1.0.0
       #- run: docker run -d -e SWAGGER_HOST=http://petstore.swagger.io -e SWAGGER_BASE_PATH=/v2 -p 80:8080 swaggerapi/petstore
       #- run: docker ps -a
-    - run: git clone https://github.com/wing328/swagger-samples
-    - run: which mvn
-    - run: sudo /usr/local/apache-maven/bin/mvn jetty:run -f swagger-samples/java/java-jersey-jaxrs-ci &
-    - run: sleep 200 
+      #- run: git clone https://github.com/wing328/swagger-samples
+      #- run: which mvn
+      #- run: sudo /usr/local/apache-maven/bin/mvn jetty:run -f swagger-samples/java/java-jersey-jaxrs-ci &
+      #- run: sleep 200 
     - run: cat /etc/hosts
     # Test
     - run: mvn --quiet clean install -Dorg.slf4j.simpleLogger.defaultLogLevel=error
