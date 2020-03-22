@@ -26,7 +26,7 @@ class StoreApiTest extends FlatSpec with Matchers {
       id = Some(1000),
       quantity = Some(101),
       status = Some("pending"),
-      shipDate = Some(now),
+      //shipDate = Some(now),
       complete = Some(true))
 
     api.placeOrder(order)
@@ -49,7 +49,7 @@ class StoreApiTest extends FlatSpec with Matchers {
       petId = Some(10),
       quantity = Some(101),
       status = Some("pending"),
-      shipDate = Some(now),
+      //shipDate = Some(now),
       complete = Some(true))
 
     api.placeOrder(order)

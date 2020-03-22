@@ -14,7 +14,7 @@ func TestPlaceOrder(t *testing.T) {
 		Id:       0,
 		PetId:    0,
 		Quantity: 0,
-		ShipDate: time.Now().UTC(),
+		//ShipDate: time.Now().UTC(),
 		Status:   "placed",
 		Complete: false}
 
