@@ -65,7 +65,7 @@ jobs:
       #- run: docker ps -a
     - run: git clone https://github.com/wing328/swagger-samples
     - run: which mvn
-    - run: sudo /usr/local/apache-maven/bin/mvn jetty:run -f swagger-samples/java/java-jersey-jaxrs-ci
+    - run: sudo /usr/local/apache-maven/bin/mvn jetty:run -f swagger-samples/java/java-jersey-jaxrs-ci &
     - run: sleep 30
     - run: cat /etc/hosts
     # Test
